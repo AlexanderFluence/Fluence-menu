@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -29,3 +31,12 @@ jobs:
         with:
           name: FluenceMenu-APK
           path: FluenceMenu.apk
+
+      - name: Publicar en Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ultima
+          name: Fluence Menu (última versión)
+          body: Descarga FluenceMenu.apk y ábrelo en la radio para instalarlo.
+          files: FluenceMenu.apk
+          make_latest: true

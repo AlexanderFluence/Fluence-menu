@@ -18,9 +18,9 @@ La primera vez, la barra se llena sola con Spotify, ZLink y Maps o Waze si está
 
 1. Crea un repositorio nuevo en GitHub (por ejemplo `fluence-menu`).
 2. Sube todos estos archivos, incluida la carpeta `.github`.
-3. Entra a la pestaña **Actions**: la compilación empieza sola y tarda unos 3 minutos.
-4. Abre la ejecución terminada (con check verde) y descarga **FluenceMenu-APK** al final de la página.
-5. Descomprime el zip, copia `FluenceMenu.apk` a una USB y ábrelo en la radio para instalarlo.
+3. La compilación empieza sola en la pestaña **Actions** y tarda unos 3 minutos.
+4. Al terminar, el APK aparece en **Releases** (columna derecha del repositorio) como `FluenceMenu.apk`.
+5. Descárgalo, cópialo a una USB y ábrelo en la radio para instalarlo.
 
 Si la pestaña Actions no muestra nada, la carpeta `.github` no se subió (algunos
 teléfonos ocultan las carpetas que empiezan con punto). Créala a mano: **Add file →
